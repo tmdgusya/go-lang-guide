@@ -137,5 +137,18 @@ func main() {
 위 처럼 서로 다른 타입일 경우 연산이 불가능하다.
 
 ```go
+func main() {
+	a := 3
+	var b float64 = 3.5
 
+	var c int = a
+	d := float64(a * c)
+
+	var e int64 = 7
+	f := a * int(e)
+
+	fmt.Println(a, b, c, d, e, f)
+}
 ```
+
+위와 같이 형변환을 해서 연산하는 경우 연산이 가능하다.

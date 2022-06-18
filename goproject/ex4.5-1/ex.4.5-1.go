@@ -7,10 +7,10 @@ func main() {
 	var b float64 = 3.5
 
 	var c int = a
-	// d = a * b 서로 다른 타입간 연산 불가
+	d := float64(a * c)
 
 	var e int64 = 7
-	// f := a * e 같은 int 이지만 서로 크기가 다르므로 연산 불가
+	f := a * int(e)
 
-	fmt.Println(a, b, c, e)
+	fmt.Println(a, b, c, d, e, f)
 }
